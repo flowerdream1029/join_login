@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-squiv="X-UA-Compatible" content="IE=Edge" />
+    <link href="style.css" rel="stylesheet"/>
+	<title>用户注册</title>
+</head>
+<body>
+<div id="join" class="join">
+    <h2>用户注册</h2>
+    <table id="t-table" class="table-join">
+        <tr>
+            <td>
+                <span class="span-star">*</span>
+                <label class="label-input">用户名</label>
+            </td>
+            <td> 
+               <input type="text" id="user-name" class="text-field" name="user-name" onblur="isChineseName(this)" />
+            </td>
+            <td>
+                <span id="prompt-message" class="prompt-message"></span> 
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span class="span-star">*</span>
+                <label class="label-input">英文名</label>
+            </td>
+            <td><input type="text"  class="text-field" onblur="isEName(this)" /></td>
+            <td>
+                <span id="prompt-message" class="prompt-message"></span> 
+            </td>
+        </tr>
+        <tr>
+            <td><label class="label-input">本命</label></td>
+            <td><input type="text" id="idol" class="text-field" onblur="isEmptyIdol(this)" /></td>
+            <td>
+                <span id="prompt-message" class="prompt-message"></span> 
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span class="span-star">*</span>
+                <label class="label-input" class="prompt-message">密码</label>
+            </td>
+            <td> 
+                <input type="password" id="input-pwd" class="text-pwd" name="user-password" onblur="isSuitablePwd(this)"/>
+            </td>
+            <td>
+                <span id="prompt-message" class="prompt-message"></span> 
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span class="span-star">*</span>
+                <label class="label-input">年龄</label>
+            </td>
+            <td>
+                <input type="text" class="text-field" onblur="isInt(this)" />
+            </td>
+            <td>
+                <span id="prompt-message" class="prompt-message"></span> 
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span class="span-star">*</span>
+                <label class="label-input">电话号码</label>
+            </td>
+            <td>
+                <input type="text" class="text-field" onblur="isTelNumber(this)" />
+            </td>
+            <td>
+                <span id="prompt-message" class="prompt-message"></span> 
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span class="span-star">*</span>
+                <label class="label-input">邮箱</label>
+            </td>
+            <td>
+                <input type="text" class="text-field" onblur="isMail(this)" />
+            </td>
+            <td>
+                <span id="prompt-message" class="prompt-message"></span> 
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="label-input">幸运数字</label>
+            <td>
+                <input type="text" class="text-field" onblur="isBetweenOneToNine(this)"/>
+            </td>
+            <td>
+                <span id="prompt-message" class="prompt-message"></span> 
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="label-input">个人网站</label>
+            </td>
+            <td>
+                <input type="text" class="text-field" onblur="isURL(this)" />
+            </td>
+            <td>
+                <span id="prompt-message" class="prompt-message"></span> 
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="label-input">人生名言</label>
+            </td>
+            <td>
+                <input type="text" class="text-field" onblur="isMoreThanTwenty(this)" />
+            </td>
+            <td>
+                <span id="prompt-message" class="prompt-message"></span> 
+            </td>
+        </tr>
+    </table>
+    <p>
+        <button type="submit" class="button-join" onclick="join()">立即注册</button>
+    </p>
+    <p>
+    	<span>已有账户？</span>
+    	<a href="login.html">去登陆</a>
+    </p>
+</div>
+<script src="join.js"></script>
+</body>
+</html>

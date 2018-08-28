@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-squiv="X-UA-Compatible" content="IE=Edge" />
+    <link href="style.css" rel="stylesheet"/>
+    <title>用户登录页面</title>
+</head>
+<body>
+
+<div id="login" class="login">
+    <h2>用户登陆</h2>
+    <table class="table-login">
+        <tr>
+            <td>
+                <label>用户名</label>
+            </td>
+            <td>
+                <input id="user-name" type="text" name="user-name" placeholder="用户名" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>密码</label>
+            </td>
+            <td>
+                <input id="user-pwd" type="password" name="user-password" placeholder="请输入密码" />
+            </td>
+        </tr>
+    </table>
+    <p>
+        <button class="button-login" onclick="login()">登陆</button>
+    </p>
+    <p>
+        <span>还没有账户？</span>
+        <a href="join.html">去注册</a>
+    </p>
+</div>
+<script src="login.js"></script>
+</body>
+</html>
